@@ -1,0 +1,47 @@
+.videocard {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+
+.button_container {
+  background-color: #030303;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 15px 15px;
+}
+
+.button_container button {
+  width: 50%;
+  padding: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  border-radius: inherit;
+}
+
+@media (max-width: 811px) {
+  .videocard {
+    width: 47%;
+  }
+}
+
+@media (max-width: 500px) {
+  .videocard {
+    width: 100%;
+  }
+}
